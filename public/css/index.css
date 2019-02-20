@@ -1,0 +1,186 @@
+/* Needed css */
+html,
+body {
+  height: 1900px; /* This is needed :( */
+}
+
+.cover-image {
+  background-image: url(http://payload175.cargocollective.com/1/8/282864/5815628/DSC_0631_1_o.jpg);
+  background-position: center;
+  background-size: cover;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: -1; /* The magic of fixed parallax header*/
+}
+
+/* Just some fun */
+.cover-image {
+  background-repeat: no-repeat;
+  -webkit-transition: background-image 1s;
+  transition: background-image 1s;
+  
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* centering some text */
+  h1 { 
+    display: table;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 30px;
+    width: 300px;
+    text-align: center;
+    margin: auto; 
+    font-size: 3em;
+  }
+}
+
+header {
+  height: 100%;
+  min-height: 100%; 
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  
+  
+  nav {
+    position: absolute;
+    z-index: 2;
+    bottom: -5px;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    
+    background-color: fadeout(#fff, 70%);
+    
+    a {
+      color: black;
+      font-size: 1.5em;
+      display: inline-block;
+      margin: 10px 30px;
+      //display: inline-block;
+    }
+  }
+}
+
+/*.img-2 {
+  //background-image: url(http://payload93.cargocollective.com/1/8/282864/4164574/DSC_0476%20copycrop_o.jpg);
+}*/
+
+.content {
+  background: white;
+  padding: 20px 0;
+  width: 100%;
+}
+
+.wrap {
+  width: 960px;
+  margin: 0 auto ;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+  font: inherit;
+  color: inherit;
+}
+button {
+  overflow: visible;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+input {
+  line-height: normal;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+input[type="search"] {
+  -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
+  -webkit-appearance: textfield;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+ul {
+ list-style-type:none
+ } 
+.ui-widget-content {
+    border: 1px solid #aaaaaa;
+    background: #ffffff;
+    color: #222222;
+}
+.ui-widget {
+    font-family: Verdana,Arial,sans-serif;
+    font-size: 1.1em;
+}
+.layoutDiv1 {
+  width: 1366px;
+  margin:0 auto;      
+  text-align:left; /* "remédio" para o hack do IE */
+  padding:10px;
+  }
+.layoutDiv2 {
+  width: 1366px;
+  margin:0 auto;      
+  text-align:left; /* "remédio" para o hack do IE */ 
+  padding:10px; 
+  }
+.divMenu{
+  position:relative;
+  width: 200px;
+  /*background-color: orange;*/
+  float: left;
+}
+.divPesquisa{
+  position:relative;
+  width: 1100px;
+  /*background-color: green;*/
+  float: left;
+}
+.divAddInfo{
+  position:relative;
+  width: 1350px;
+  /*background-color: green;*/
+  float: left;
+}

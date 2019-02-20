@@ -1,0 +1,30 @@
+.product-box {
+  float:left;
+  width:180px;
+  margin:10px;
+/*  background:#e1e1e1;*/
+  transition: all 0.1s ease;
+  border-radius:2px;
+  
+  &:nth-child(4) {
+    margin-right:0;
+  }
+  
+  &:hover {
+    padding:10px;
+    margin:0;
+    background:#fff;
+    box-shadow:0 0 3px rgba(0,0,0,0.4);
+    cursor:pointer;
+  }
+  
+  
+  img { 
+    display: block;
+  }
+  h2 {
+    font-size:24px;
+    text-align:center;
+    margin:10px 0;
+  }
+}

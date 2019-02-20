@@ -1,0 +1,22 @@
+#tsi{
+  width: 1000px;
+}
+#ulm {
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    text-align: center;
+    }
+#lim {
+    border: 1px solid #fff;
+    border-color:
+      #fafafa #d2d2d2 #d2d2d2 #fafafa;
+    box-sizing: border-box;
+    float: left;
+    min-width: 150px;
+    width: 300px;
+    text-align: center;
+  }
+#table-title{
+  text-align: center;
+}
