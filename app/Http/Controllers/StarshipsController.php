@@ -12,10 +12,11 @@ class StarshipsController extends Controller
         -> Retorna dois arrays:
             - $saltos[]: Quantidade de saltos relizados em determinada distancia
             - $name[]: Nome da espaconave
-        -> FOR controla o loop de recebimento das espaconaves, limitado a 10 por ser o numero existente.
+        -> FOREACH controla o loop de recebimento das espaconaves.
     */
     public function saltos(){
-          // IF teste de consistencia: apenas numeros
+        $i=0;
+        // IF teste de consistencia: apenas numeros
         if (!empty($_POST['distancia']) && is_numeric($_POST['distancia']) && $_POST['distancia']>0) {
             $resultado = json_decode(file_get_contents("https://swapi.co/api/starships/"));
             $dados_array=$resultado->results;
@@ -23,7 +24,6 @@ class StarshipsController extends Controller
             $consumables_tempo = array();
             $name=array();
             $saltos=array();
-            $i=0;
             foreach($dados_array as $dados_array){
                 $consumables_tempo = preg_replace("/[^A-Za-z]/", "", $dados_array->consumables);
                 $consumables_num = preg_replace("/[^0-9]/", "", $dados_array->consumables);
@@ -32,6 +32,7 @@ class StarshipsController extends Controller
                     if ($consumables_tempo == "months" || $consumables_tempo == "month") {
                         $saltos[$i] = round($_POST['distancia']/(($dados_array->MGLT*24)*(preg_replace("/[^0-9]/", "", $dados_array->consumables)*30)));
                         $name[$i]=$dados_array->name;
+
                     // ELSEIF por anos
                     } elseif ($consumables_tempo == "years" || $consumables_tempo == "year") {
      
@@ -59,7 +60,7 @@ class StarshipsController extends Controller
             $name[0]="N";
             $saltos[0]="N";
         }
-    return view('saltos')->with('name',$name)->with('saltos',$saltos);
+   return view('saltos')->with('name',$name)->with('saltos',$saltos)->with('i',$i);
     }
 
 }
