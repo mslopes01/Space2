@@ -24,7 +24,8 @@
     </div>
     {!! Form::close() !!}<!-- Fechamento Formulario -->
     <!-- IF de teste se os dados foram enviados corretamente-->
-    @if ($name[0]!="N" && $saltos[0]!="N")
+    <?php print_r($name); print_r($saltos);?>
+    @if ($name[0]!=="N" && $saltos[0]!=="N")
         <?php for ($i=0; $i < 10; $i++) { ?><!-- FOR loop dos dados recebidos e formatados. Loop apenas das 10 naves existentes. -->
         <div class="container-fluid hidden-print">
             <div class="form-row style_div_bea">                

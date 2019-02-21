@@ -16,7 +16,7 @@ class StarshipsController extends Controller
     */
     public function saltos(){
           // IF teste de consistencia: apenas numeros
-        if (!empty($_POST['distancia']) && is_numeric($_POST['distancia'])) {
+        if (!empty($_POST['distancia']) && is_numeric($_POST['distancia']) && $_POST['distancia']>0) {
             $resultado = json_decode(file_get_contents("https://swapi.co/api/starships/"));
             $dados_array=$resultado->results;
             $consumables_num = array();
@@ -59,8 +59,7 @@ class StarshipsController extends Controller
             $name[0]="N";
             $saltos[0]="N";
         }
-    print_r($name);
-    //return view('saltos')->with('name',$name)->with('saltos',$saltos);
+    return view('saltos')->with('name',$name)->with('saltos',$saltos);
     }
 
 }
