@@ -24,9 +24,8 @@
     </div>
     {!! Form::close() !!}<!-- Fechamento Formulario -->
     <!-- IF de teste se os dados foram enviados corretamente-->
-    <?php print_r($name); print_r($saltos);?>
     @if ($name[0]!=="N" && $saltos[0]!=="N")
-        <?php for ($i=0; $i < 10; $i++) { ?><!-- FOR loop dos dados recebidos e formatados. Loop apenas das 10 naves existentes. -->
+        @FOR ($v=0; $v < $i; $v++)<!-- FOR loop dos dados recebidos e formatados. -->
         <div class="container-fluid hidden-print">
             <div class="form-row style_div_bea">                
                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
@@ -35,13 +34,13 @@
                             <h4>
                             <img src="{{ asset('/img/Startup-32.png') }}">                        
                             <?php
-                                echo  strtoupper($name[$i])." --> ".$saltos[$i]." Salto(s)</h4>"; 
+                                echo  strtoupper($name[$v])." --> ".$saltos[$v]." Salto(s)</h4>"; 
                             ?>
                         </div>
                     </div>
             </div>
         </div>
-        <?php } ?>
+        @ENDFOR
     <!-- ELSE de teste incorreto-->
     @else 
         <div class="container-fluid hidden-print">
