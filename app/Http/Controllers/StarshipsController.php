@@ -5,7 +5,10 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 class StarshipsController extends Controller
-{
+{   
+    function descricoes($item) {
+        return $item->name;
+    }
     /*
         FUNCTION de calculo de saltos
         -> Recebe o valor via Post e faz as devidas verificações.
@@ -15,8 +18,12 @@ class StarshipsController extends Controller
         -> FOR controla o loop de recebimento das espaconaves, limitado a 10 por ser o numero existente.
     */
     public function saltos(){
+        $dados = json_decode(file_get_contents("https://swapi.co/api/starships/"));
+        $dados2 = array_map(descricoes, $dados);
+        print_r($dados2);
+        echo "string";
         // IF teste de consistencia: apenas numeros
-        if (!empty($_POST['distancia']) && is_numeric($_POST['distancia'])) {
+        /*if (!empty($_POST['distancia']) && is_numeric($_POST['distancia'])) {
             $consumables_num = array();
             $consumables_tempo = array();
             $name=array();
@@ -58,6 +65,7 @@ class StarshipsController extends Controller
             $name[0]="N";
             $saltos[0]="N";
         }
-    return view('saltos')->with('name',$name)->with('saltos',$saltos);
+    return view('saltos')->with('name',$name)->with('saltos',$saltos);*/
     }
+
 }
