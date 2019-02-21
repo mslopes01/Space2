@@ -1,4 +1,4 @@
-<p align="center"><img src="{{ asset('/public/img/R2-D2-64.png') }}"><h2>Starships</h2></p>
+<p align="center"><h3>A<img src="https://image.flaticon.com/icons/png/512/86/86580.png">D</h3></p>
 
 <p align="center">
 <a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
