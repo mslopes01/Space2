@@ -1,4 +1,4 @@
-<p align="center">Starships</p>
+<p align="center"><h2>Starships</h2></p>
 
 <p align="center">
 <a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
