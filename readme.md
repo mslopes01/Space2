@@ -9,7 +9,21 @@
 
 ## Instalção
 
-- Requisitos
+**Requisitos**:
+	- PHP> = 7.1.3
+	- Extensão PHP OpenSSL
+	- Extensão PHP PDO
+	- Extensão PHP Mbstring
+	- Extensão PHP Tokenizer
+	- Extensão PHP XML
+	- Extensão PHP Ctype
+	- Extensão PHP JSON
+	- Extensão PHP BCMath
+	Ou usar máquina virtual [Laravel Homestead](https://laravel.com/docs/5.7/homestead).
+
+**Composer**:
+	O Laravel utiliza o [Composer](https://getcomposer.org/) para gerenciar suas dependências. Então, antes de usar o Laravel, certifique-se de ter o [Composer](https://getcomposer.org/) instalado em sua máquina.
+
 
 Ou seguir o tutorial do [site](https://laravel.com/docs/5.7#installation).
 
