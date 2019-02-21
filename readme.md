@@ -24,6 +24,12 @@
 **Composer**:
 	O Laravel utiliza o [Composer](https://getcomposer.org/) para gerenciar suas dependências. Então, antes de usar o Laravel, certifique-se de ter o [Composer](https://getcomposer.org/) instalado em sua máquina.
 
+**Servidor de Desenvolvimento Local**
+Se você tem o PHP instalado localmente e gostaria de usar o servidor de desenvolvimento interno do PHP para servir sua aplicação, você pode usar o servecomando Artisan. Este comando irá iniciar um servidor de desenvolvimento em :http://localhost:8000
+
+php artisan serve
+Opções de desenvolvimento local mais robustas estão disponíveis via Homestead e Valet .
+
 
 Ou seguir o tutorial do [site](https://laravel.com/docs/5.7#installation).
 
