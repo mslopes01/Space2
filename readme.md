@@ -1,4 +1,4 @@
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+<p align="center">Starships</p>
 
 <p align="center">
 <a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
@@ -10,6 +10,7 @@
 ## Configuração e Execução
 
 **Requisitos**:
+	- Laravel> = 5.7
 	- PHP> = 7.1.3
 	- Extensão PHP OpenSSL
 	- Extensão PHP PDO
