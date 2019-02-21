@@ -10,9 +10,8 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-// Chamada para pagina inicial
-Route::get('/', function () {
-    return view('welcome');
-});
-// Chamada da function Saltos
+// Chamada para pagina inicial.
+Route::get('/', function () { return view('welcome'); });
+
+// Chamada da function Saltos na controller StarshipsController.
 Route::post('pesquisa','StarshipsController@saltos');
