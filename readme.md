@@ -1,4 +1,4 @@
-<p align="center"><h3> Starships <img src="https://image.flaticon.com/icons/png/512/86/86580.png" width="48" height="48"> Star Wars</h3></p>
+<h2> Starships <img src="https://image.flaticon.com/icons/png/512/86/86580.png" width="48" height="48"> Star Wars</h2>
 
 <p align="center">
 <a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
@@ -10,7 +10,6 @@
 ## Configuração e Execução
 
 **Requisitos**:
-	- Laravel> = 5.7
 	- PHP> = 7.1.3
 	- Extensão PHP OpenSSL
 	- Extensão PHP PDO
