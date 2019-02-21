@@ -9,7 +9,9 @@
 
 ## Instalção
 
-Teste
+- Requisitos
+
+Ou seguir o tutorial do [site](https://laravel.com/docs/5.7#installation).
 
 ## About Laravel
 
