@@ -1,4 +1,4 @@
-<h2> Starships <img src="https://image.flaticon.com/icons/png/512/86/86580.png" width="48" height="48"> Star Wars</h2>
+<h1> Starships <img src="https://image.flaticon.com/icons/png/512/86/86580.png" width="48" height="48"> Star Wars</h1>
 
 <p align="center">
 <a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
