@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Starships - Star Wars</title>
 
         <!-- CSS -->
         <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet">
