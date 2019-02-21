@@ -1,4 +1,4 @@
-<p align="center"><h3>A<img src="https://image.flaticon.com/icons/png/512/86/86580.png">D</h3></p>
+<p align="center">A<img src="https://image.flaticon.com/icons/png/512/86/86580.png" width="48" height="48">D</p>
 
 <p align="center">
 <a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
