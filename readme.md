@@ -1,5 +1,6 @@
-<p align="center" style="font-size:160%;">Starships <img src="https://image.flaticon.com/icons/png/512/86/86580.png" width="48" height="48"> Star Wars</p>
-
+<p align="center" style=" font-size:160%;">Starships <img src="https://image.flaticon.com/icons/png/512/86/86580.png" width="48" height="48"> Star Wars</p>
+<p style="font-size:160%;">This is a paragraph.</p>
+<p style="font-size:260%;">This is a paragraph.</p>
 <p align="center">
 <a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
